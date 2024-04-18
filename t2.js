@@ -26,6 +26,7 @@ function fadeIn() {
 }
 
 document.querySelector(".content").onclick = () => {
+    document.querySelector("#click").hidden = true;
     audio.play();
     setTimeout(function () {
         document.querySelector("#heart").hidden = false;

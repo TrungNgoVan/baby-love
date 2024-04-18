@@ -2,6 +2,10 @@ body {
     background: black;
 }
 
+#click {
+    color: white;
+}
+
 .chest {
     position: absolute;
     top: 50%;
