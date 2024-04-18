@@ -1,3 +1,6 @@
+// Add audio
+var audio = new Audio("./audio.mp3");
+
 function fadeIn() {
     var text = $(".content")
         .text()
@@ -6,7 +9,7 @@ function fadeIn() {
     var i = 0;
     var txt;
     var html = [];
-    var sp = 10;
+    var sp = 4;
     for (; i < length; i += sp) {
         txt = text.substring(i, i + sp);
         html.push('<span class="c animated">' + txt + "</span>");
@@ -22,17 +25,11 @@ function fadeIn() {
     }
 }
 
-// document.querySelector(".content").onclick = () => {
-//     document.querySelector("#heart").hidden = false;
-//     document.querySelector("body").style.backgroundColor = "#542246";
-//     document.querySelector("#heart").hidden = false;
-//     fadeIn();
-// };
-
-window.onload = function () {
+document.querySelector(".content").onclick = () => {
+    audio.play();
     setTimeout(function () {
         document.querySelector("#heart").hidden = false;
         document.querySelector("body").style.backgroundColor = "#542246";
         fadeIn(); // Assuming you have a function named fadeIn() to handle the animation
-    }, 3200); // Wait for 2 seconds before executing the changes
+    }, 3400); // Wait for 2 seconds before executing the changes
 };
