@@ -1,9 +1,18 @@
 body {
     line-height: 2;
+    /* background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926"); */
+    /* background: url("./2.png"); */
+    /* Use image for background */
+    background-size: 50%;
+    background-attachment: fixed;
+    /* Fixed background */
+    background-repeat: no-repeat;
+    /* No repeat */
+    /* font-family: "Roboto", sans-serif; */
 }
 
 .c {
-    color: #fff;
+    color: #ffffff;
     opacity: 0;
 }
 

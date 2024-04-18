@@ -390,7 +390,7 @@ body {
     top: 50%;
     left: 50%;
     opacity: 0;
-    animation: twinkle 0.8s infinite alternate ease-in;
+    animation: twinkle 2s infinite alternate ease-in;
     z-index: 300;
 }
 
@@ -444,15 +444,29 @@ body {
     margin-top: 15%;
     margin-left: 20%;
     animation-delay: 0.7s;
-    transform: scale(1.2);
 }
 
 .spark-7 {
     margin-top: -9%;
     margin-left: 23%;
     animation-delay: 0.7s;
-    transform: scale(1.2);
 }
+
+/* To slow down the animation: */
+/* 1. Increase animation duration: */
+/*.spark {
+    animation: twinkle **1.6s** infinite alternate ease-in;
+}*/
+
+/* 2. Change timing function: */
+/*.spark {
+    animation: twinkle 0.8s infinite alternate **ease-out**;
+}*/
+
+/* 3. Combine both (adjust values as needed): */
+/*.spark {
+    animation: twinkle **1.2s** infinite alternate **ease-out**;
+}*/
 
 .white {
     background: #fff;
