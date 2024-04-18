@@ -1,7 +1,3 @@
-// Play audio
-var audio = new Audio("audio.mp3"); // Create an audio object
-audio.play(); // Play the audio
-
 function fadeIn() {
     var text = $(".content")
         .text()
